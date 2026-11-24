@@ -12,14 +12,16 @@ AMyActor::AMyActor()
 }
 
 // Called when the game starts or when spawned
-void AMyActor::BeginPlay()
+void AMyActor::BeginPlay() // Start
 {
 	Super::BeginPlay();
+
+	UE_LOG(LogTemp, Warning, TEXT("Hello world"));
 	
 }
 
 // Called every frame
-void AMyActor::Tick(float DeltaTime)
+void AMyActor::Tick(float DeltaTime) //Update
 {
 	Super::Tick(DeltaTime);
 
